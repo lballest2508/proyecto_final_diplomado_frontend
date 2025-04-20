@@ -5,6 +5,8 @@ const api = axios.create({
 });
 
 export const getProducts = async () => {
+  console.log('Holaa: ' + api);
+  
   const response = await api.get('/products');
   return response.data;
 };
