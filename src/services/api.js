@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: `${process.env.VITE_API}/api`,
+  // baseURL: `${process.env.VITE_API}/api`,
+  baseURL: `https://proyectofinaldiplomadobackend-production.up.railway.app/api`,
 });
 
 export const getProducts = async () => {
