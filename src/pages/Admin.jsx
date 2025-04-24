@@ -50,6 +50,7 @@ function Admin() {
         );
         setEditingProduct(null);
       } else {
+        delete product.id;
         const newProduct = await createProduct(product);
         setProducts((prev) => [...prev, newProduct]);
       }
